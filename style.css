@@ -1,0 +1,266 @@
+
+html,
+body{
+  height: 100%;
+  animation-duration: 5s;
+  animation-delay: 3s;
+}
+header{
+  height: 20vh;
+  background-color: #484646;
+}
+
+
+.view{
+  height: 77vh;
+
+}
+footer{
+  background-color: #484646;
+  height: 6vh;
+}
+
+@media (max-width: 600px) {
+  html,
+  body{
+    height: 100vh;
+  }
+  header{
+    height: 20vh;
+    background-color: #484646;
+  }
+  .view{
+    height: 80vh;
+  }
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+  }
+}
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link{
+  color: white;
+}
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+
+.nav-item{
+  font-size: 45px;
+  font-family: "Great Vibes", serif;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+.card-title {
+  font-family: 'Marck Script', cursive;
+  font-size: x-large;
+  text-align:center;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-family: 'Marck Script', cursive;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+}
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+
+
+.item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
+}
+.logo{
+  height: 150px;
+}
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: white !important;
+  }
+  .librosPola{
+    display: none;
+  }
+
+}
+.carousel-inner > .carousel-item > img {
+  object-fit: scale-down;
+  height: 77vh;
+  width: 100%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+@media (min-width: 700px) {
+  .cabecera2 {
+    height: 20vh;
+  }
+  .dibujoIndex {
+    height: 62vh;
+    width: 55vh;
+    animation-duration: 7s;
+    animation-delay: 1s;
+  }
+  .dibujoPoemas {
+    height: 55vh;
+    width: 75vh;
+    margin-bottom: 5px;
+  }
+  .librosCarru{
+    display: none;
+  }
+
+  .navbar-dark{
+    color: white;
+  }
+}
+.tituloNav {
+  letter-spacing: 5px;
+  font-family: "Great Vibes", serif;
+  font-size: 25px;
+  color: white;
+}
+.librosCarru{
+  padding-top: 80px;
+}
+.textoIndex {
+  padding-top: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.3em;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+#submit {
+  background-color: white;
+  color: black;
+  border: black;
+}
+.letraCursiva {
+  font-family: "Great Vibes", serif;
+  font-size: 35px;
+}
+.carousel-item, carousel-inner{
+  text-align: center;
+}
+pre {
+  font-family: 'Inter', sans-serif;
+}
+.modal-title {
+  font-family: 'Inter', sans-serif;
+}
