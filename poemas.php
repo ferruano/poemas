@@ -73,13 +73,10 @@
         $sql = 'SELECT * FROM poemas WHERE id = {$id}';
         $cmsData = $db->query($sql);
         $titulo = $cmsData['Titulo'];
+        $texto = $cmsData['Texto'];
         ?>
-        document.getElementById('titulo').innerHTML =<?php echo $titulo;?>;
-        document.getElementById('texto').innerHTML =<?php
-        $sql = 'SELECT * FROM poemas WHERE id = {$id}';
-        $cmsData = $db->query($sql);
-        echo $cmsData['Texto'];
-        ?>;
+        document.getElementById('titulo').innerHTML ="<?php echo $titulo;?>";
+        document.getElementById('texto').innerHTML ="<?php echo $texto;?>";
     }
 </script>
 <?php include "scripts.php" ?>
